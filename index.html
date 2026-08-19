@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- These three lines control how the page looks when shared on WhatsApp,
+     LinkedIn, etc. Edit them once you know your final URL. -->
+<title>Ishan Vaykole — Biochemistry &amp; Clinical Research</title>
+<meta name="description" content="Biochemistry and Molecular Biology student at the University of Melbourne. Former research assistant in endocrinology at Nair Hospital, Mumbai, studying diabetes-related distress across socioeconomic groups.">
+<meta property="og:title" content="Ishan Vaykole — Biochemistry &amp; Clinical Research">
+<meta property="og:description" content="BSc Biochemistry & Molecular Biology at the University of Melbourne. Clinical research in endocrinology, health disparities and statistical analysis.">
+<meta property="og:type" content="website">
+<meta name="theme-color" content="#08090c">
+
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='24' fill='%23101319'/><text y='69' x='50' text-anchor='middle' font-size='58' font-family='system-ui' font-weight='600' fill='%235eead4'>I</text></svg>">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="styles.css">
+<script>
+  // Same cache-busting trick for the stylesheet, so colour or spacing tweaks
+  // in styles.css show up on a normal refresh too.
+  document.currentScript.previousElementSibling.href = "styles.css?t=" + Date.now();
+</script>
+</head>
+
+<body>
+
+<div id="cursor-glow"></div>
+<div id="progress"></div>
+
+<!-- ============================================================== NAV === -->
+<header id="nav">
+  <div class="wrap nav-inner">
+    <a href="#hero" class="nav-logo"><span class="dot"></span><span id="logo-name"></span></a>
+
+    <nav class="nav-links" id="nav-links">
+      <a href="#about">About</a>
+      <a href="#research">Research</a>
+      <a href="#lab">Lab work</a>
+      <a href="#experience">Experience</a>
+      <a href="#education">Education</a>
+      <a href="#skills">Skills</a>
+      <a href="#contact" class="nav-cta">Contact</a>
+    </nav>
+
+    <button class="nav-burger" id="burger" aria-label="Menu" aria-expanded="false">
+      <span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main>
+
+  <!-- ============================================================ HERO === -->
+  <section id="hero">
+    <div class="wrap hero-grid">
+      <div class="hero-badge reveal"><span class="pulse"></span><span id="hero-eyebrow"></span></div>
+
+      <div>
+        <h1 class="hero-name reveal" id="hero-name"></h1>
+        <p class="hero-line reveal" style="margin-top:16px">
+          Working on <span id="rotator"></span>
+        </p>
+      </div>
+
+      <p class="hero-intro reveal" id="hero-intro"></p>
+
+      <div class="hero-actions reveal" id="hero-actions"></div>
+
+      <div class="hero-meta reveal" id="hero-meta"></div>
+    </div>
+
+    <div class="scroll-hint"><span>Scroll</span><span class="bar"></span></div>
+  </section>
+
+  <!-- =========================================================== STATS === -->
+  <section id="stats">
+    <div class="wrap"><div class="stat-grid" id="stat-grid"></div></div>
+  </section>
+
+  <!-- =========================================================== ABOUT === -->
+  <section id="about" class="sec">
+    <div class="wrap">
+      <div class="sec-head reveal">
+        <p class="eyebrow">01 — Ambition</p>
+        <h2 class="sec-title">Where I'm <span class="grad">headed</span></h2>
+      </div>
+
+      <div class="about-grid">
+        <div class="about-text reveal">
+          <div id="about-text"></div>
+          <div class="about-more" id="about-more"><div class="about-more-inner">
+            <div id="about-more-text"></div>
+          </div></div>
+          <button class="read-more" id="read-more" aria-expanded="false"></button>
+        </div>
+        <aside class="about-side reveal">
+          <div class="avatar" id="avatar"></div>
+          <div class="facts" id="facts"></div>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================================================== RESEARCH === -->
+  <section id="research" class="sec">
+    <div class="wrap">
+      <div class="sec-head reveal">
+        <p class="eyebrow">02 — Work</p>
+        <h2 class="sec-title">Clinical <span class="grad">research</span></h2>
+        <p class="sec-sub">Filter by area, or click any card to open the detail.</p>
+      </div>
+
+      <div class="filters reveal" id="filters"></div>
+      <div class="cards" id="cards"></div>
+      <p class="empty" id="empty" hidden>Nothing in that category yet.</p>
+    </div>
+  </section>
+
+  <!-- ========================================================= LAB WORK === -->
+  <section id="lab" class="sec">
+    <div class="wrap">
+      <div class="sec-head reveal">
+        <p class="eyebrow">03 — Bench</p>
+        <h2 class="sec-title">Laboratory &amp; <span class="grad">independent research</span></h2>
+        <p class="sec-sub">
+          Written investigations from the IB Diploma Programme, plus one study I ran
+          on my own outside the curriculum.
+        </p>
+      </div>
+      <div class="cards" id="lab-cards"></div>
+    </div>
+  </section>
+
+  <!-- ====================================================== EXPERIENCE === -->
+  <section id="experience" class="sec">
+    <div class="wrap">
+      <div class="sec-head reveal">
+        <p class="eyebrow">04 — Path</p>
+        <h2 class="sec-title">Where I've <span class="grad">worked</span></h2>
+      </div>
+      <div class="timeline" id="timeline"></div>
+    </div>
+  </section>
+
+  <!-- ======================================================= EDUCATION === -->
+  <section id="education" class="sec">
+    <div class="wrap">
+      <div class="sec-head reveal">
+        <p class="eyebrow">05 — Education</p>
+        <h2 class="sec-title">Study &amp; <span class="grad">recognition</span></h2>
+      </div>
+
+      <div class="edu-grid">
+        <div class="edu-list" id="edu-list"></div>
+        <div class="honours">
+          <div class="honour-block reveal">
+            <div class="skill-group">Honours &amp; awards</div>
+            <ul class="honour-items" id="awards"></ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="certs-wrap reveal">
+        <div class="skill-group">Certifications</div>
+        <div class="cert-grid" id="certs"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================== SKILLS === -->
+  <section id="skills" class="sec">
+    <div class="wrap">
+      <div class="sec-head reveal">
+        <p class="eyebrow">06 — Toolkit</p>
+        <h2 class="sec-title">What I can <span class="grad">do</span></h2>
+      </div>
+      <div class="skill-grid" id="skill-grid"></div>
+
+      <div class="lang-wrap reveal">
+        <div class="skill-group">Languages</div>
+        <div class="lang-grid" id="lang-grid"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================= CONTACT === -->
+  <section id="contact" class="sec">
+    <div class="wrap">
+      <div class="contact-box reveal">
+        <h2 class="contact-title" id="contact-title"></h2>
+        <p class="contact-blurb" id="contact-blurb"></p>
+        <div class="contact-actions" id="contact-actions"></div>
+        <div class="socials" id="socials"></div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap foot-inner">
+    <span id="foot-note"></span>
+    <a href="#hero" class="to-top">Back to top
+      <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"
+           stroke-linecap="round" stroke-linejoin="round"><path d="M18 15l-6-6-6 6"/></svg>
+    </a>
+  </div>
+</footer>
+
+<!-- data.js holds all your content. app.js turns it into the page.
+     They're loaded with a timestamp on the end so that when you edit data.js
+     and hit refresh, the browser always fetches your new version instead of
+     serving you a stale cached copy. -->
+<script>
+  (function () {
+    var v = "?t=" + Date.now();
+    var data = document.createElement("script");
+    data.src = "data.js" + v;
+    data.onload = function () {
+      var app = document.createElement("script");
+      app.src = "app.js" + v;
+      document.body.appendChild(app);
+    };
+    data.onerror = function () {
+      document.body.innerHTML =
+        '<pre style="padding:40px;color:#e9ecf2;font:15px/1.6 ui-monospace,monospace">' +
+        "Couldn't load data.js.\n\nMake sure data.js is in the same folder as index.html." +
+        "</pre>";
+    };
+    document.body.appendChild(data);
+  })();
+</script>
+</body>
+</html>
