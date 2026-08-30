@@ -94,7 +94,6 @@ const PORTFOLIO = {
     ],
     // Optional headshot: save a photo as "photo.jpg" here and write "photo.jpg".
     // Left blank, the site shows your initials — which also looks fine.
-    photo: "",
   },
 
   /* ----------------------------------------------- CLINICAL RESEARCH ----- */
