@@ -183,27 +183,6 @@
     });
   });
 
-  // Filters, built from the tags actually present in data.js
-  const allTags = ["All", ...new Set(D.research.flatMap((r) => r.tags || []))];
-  $("#filters").innerHTML = allTags.map((t, i) =>
-    `<button class="filter${i === 0 ? " on" : ""}" data-tag="${esc(t)}">${esc(t)}</button>`).join("");
-
-  $("#filters").addEventListener("click", (e) => {
-    const btn = e.target.closest(".filter");
-    if (!btn) return;
-    $$(".filter").forEach((b) => b.classList.toggle("on", b === btn));
-
-    const tag = btn.dataset.tag;
-    let shown = 0;
-    // Only the clinical-research cards are filterable; the lab section is not.
-    $$("#cards .card").forEach((card) => {
-      const hit = tag === "All" || card.dataset.tags.split("|").includes(tag);
-      card.classList.toggle("hidden", !hit);
-      if (hit) shown++;
-    });
-    $("#empty").hidden = shown > 0;
-  });
-
   /* ======================================================== EXPERIENCE == */
   const tlItem = (x) => `
     <div class="tl-item reveal${x.current ? " now" : ""}">
