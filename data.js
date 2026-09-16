@@ -72,13 +72,20 @@ const PORTFOLIO = {
     paragraphs: [
       "I want to understand life deeply enough to one day improve it.",
 
-      "My aim is to contribute meaningfully to medicine and healthcare — through " +
-      "biochemistry, through research, or through innovations that don't exist " +
-      "yet. Titles matter far less to me than the impact they create.",
+      "My focus sits at the intersection of biological precision and scalable impact. " +
+      "On the scientific side, I work across cellular metabolic pathways, organic chemistry, " +
+      "and quantitative ecological datasets—from biodiversity metrics to species richness models. " +
+      "I approach biological systems as complex, intricate networks to be understood, decoded, and optimized.",
 
-      "I also want to build something of my own. Research discovers " +
-      "possibilities; entrepreneurship brings them into the world. I've never " +
-      "seen the two as opposites, and I'd like to work somewhere between them.",
+      "Yet discovery inside a lab only creates change when it reaches the people who need it. " +
+      "To bridge this divide, I actively train across commercial and organizational strategy: " +
+      "developing actionable marketing plans, analyzing value creation models, and designing " +
+      "community engagement frameworks for healthcare initiatives. True innovation happens " +
+      "when scientific rigor meets entrepreneurial execution.",
+
+      "Research discovers what is possible; entrepreneurship delivers it to the world. " +
+      "I don't see the laboratory bench and commercial strategy as opposites, but as two " +
+      "complementary disciplines driving the future of biotechnology and healthcare.",
     ],
 
     // Anything in here appears behind a "Continue reading" button.
