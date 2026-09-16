@@ -372,16 +372,33 @@ section { position: relative; }
   gap: clamp(32px, 5vw, 64px);
   align-items: start;
 }
-.about-text p { color: var(--text-dim); }
-.about-text p + p { margin-top: 18px; }
-.about-text #about-more-text p:first-child { margin-top: 18px; }
+.about-text {
+  background: var(--bg-card);
+  border: 1px solid var(--line);
+  border-radius: var(--r);
+  padding: clamp(24px, 4vw, 36px);
+}
+.about-text p { 
+  color: var(--text-dim); 
+  font-size: 15.5px;
+  line-height: 1.8;
+}
+.about-text p + p { 
+  margin-top: 20px; 
+}
+.about-text #about-more-text p:first-child { 
+  margin-top: 20px; 
+}
 
-/* The opening line carries the section — give it presence. */
+/* The opening lead line with a subtle accent bar */
 .about-text #about-text p:first-child {
-  font-size: clamp(1.25rem, 2.6vw, 1.6rem);
-  line-height: 1.4;
+  font-size: clamp(1.15rem, 2.2vw, 1.35rem);
+  font-weight: 550;
+  line-height: 1.55;
   color: var(--text);
-  letter-spacing: -0.025em;
+  letter-spacing: -0.015em;
+  padding-left: 18px;
+  border-left: 3px solid var(--accent-a);
   margin-bottom: 24px;
 }
 
