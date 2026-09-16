@@ -70,7 +70,7 @@ const PORTFOLIO = {
     // What I want to do. Keep this short — it's the whole point of the section.
     // Each string is its own paragraph.
    paragraphs: [
-      "I’m a student at the University of Melbourne, driven by a simple curiosity: how can understanding life help us improve it?",
+      "I’m a student at who is driven by a simple question: how can understanding life help us improve it?",
 
       "Growing up around medicine sparked my interest in the science behind disease and treatment, but my curiosity has taken me beyond the textbook. Through research and data analysis, I’ve begun learning how scientific questions become meaningful discoveries, while my experience in design, video, events and creative projects has taught me how ideas can be communicated and brought to life.",
 
