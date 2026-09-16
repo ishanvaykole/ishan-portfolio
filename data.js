@@ -69,23 +69,12 @@ const PORTFOLIO = {
 
     // What I want to do. Keep this short — it's the whole point of the section.
     // Each string is its own paragraph.
-    paragraphs: [
-      "I want to understand life deeply enough to one day improve it.",
+   paragraphs: [
+      "I’m a student at the University of Melbourne, driven by a simple curiosity: how can understanding life help us improve it?",
 
-      "My focus sits at the intersection of biological precision and scalable impact. " +
-      "On the scientific side, I work across cellular metabolic pathways, organic chemistry, " +
-      "and quantitative ecological datasets—from biodiversity metrics to species richness models. " +
-      "I approach biological systems as complex, intricate networks to be understood, decoded, and optimized.",
+      "Growing up around medicine sparked my interest in the science behind disease and treatment, but my curiosity has taken me beyond the textbook. Through research and data analysis, I’ve begun learning how scientific questions become meaningful discoveries, while my experience in design, video, events and creative projects has taught me how ideas can be communicated and brought to life.",
 
-      "Yet discovery inside a lab only creates change when it reaches the people who need it. " +
-      "To bridge this divide, I actively train across commercial and organizational strategy: " +
-      "developing actionable marketing plans, analyzing value creation models, and designing " +
-      "community engagement frameworks for healthcare initiatives. True innovation happens " +
-      "when scientific rigor meets entrepreneurial execution.",
-
-      "Research discovers what is possible; entrepreneurship delivers it to the world. " +
-      "I don't see the laboratory bench and commercial strategy as opposites, but as two " +
-      "complementary disciplines driving the future of biotechnology and healthcare.",
+      "I’m drawn to the intersection of biochemistry, medicine, research and entrepreneurship—where understanding a problem is only the beginning and the real challenge is building something that can make a difference. I’m still figuring out exactly where that path will lead but I know I want to spend it learning deeply, creating boldly, and doing work that matters.",
     ],
 
     // Anything in here appears behind a "Continue reading" button.
